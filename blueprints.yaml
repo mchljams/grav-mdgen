@@ -1,0 +1,30 @@
+name: Grav Markdown Generator
+version: 0.1.0
+description: Generates a new markdown file using the Lorem Markdownum generator from https://jaspervdj.be/lorem-markdownum/.
+icon: plug
+author:
+  name: Michael James
+  email: mike.pisula@gmail.com
+homepage: https://github.com/mchljams/grav-mdgen
+keywords: grav, plugin, etc
+bugs: https://github.com/mchljams/grav-mdgen/issues
+docs: https://github.com/mchljams/grav-mdgen/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page

@@ -1,0 +1,10 @@
+{
+  "require": {
+    "joshtronic/php-loremipsum": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\Mdgen\\": "classes/"
+    }
+  }
+}
